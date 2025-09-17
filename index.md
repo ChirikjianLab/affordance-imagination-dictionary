@@ -57,7 +57,10 @@ Robots reconstruct previously unseen chairs, simulate their sitting affordance, 
     Robots reconstruct previously unseen chairs, simulate their sitting affordance, 
     and reorient them so a humanoid agent (teddy bear proxy) can be seated. 
     Demonstrates object classification and functional pose prediction via 
-    physics-based imagination.
+    physics-based imagination. 
+    
+    - [Paper](https://arxiv.org/abs/2502.15525){:target="_blank"}
+    - [Code](https://github.com/ChirikjianLab){:target="_blank"}
   </p>
 </div>
 

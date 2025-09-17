@@ -6,11 +6,14 @@
 [Ceng Zhang<sup>1</sup>](https://github.com/ChirikjianLab){:target="_blank"},
 [Wan Su<sup>1</sup>](https://github.com/ChirikjianLab){:target="_blank"}, 
 [Chen Dong<sup>2</sup>](https://github.com/ChirikjianLab){:target="_blank"}, 
-[Gregory Chirikjian<sup>1*</sup>](https://cde.nus.edu.sg/me/staff/chirikjian-gregory-s/){:target="_blank"}
+[Cecilia Laschi<sup>12*</sup>](https://scholar.google.com/citations?user=1vR7lMUAAAAJ&hl=en){:target="_blank"}
+[Gregory Chirikjian<sup>12*</sup>](https://cde.nus.edu.sg/me/staff/chirikjian-gregory-s/){:target="_blank"}
 
 <sup>1</sup>Department of Mechanical Engineering, National University of Singapore, Singapore
 
-<sup>*</sup>Department of Mechanical Engineering, University of Delaware, USA
+<sup>2</sup>Department of Mechanical Engineering, University of Delaware, USA
+
+<sup>*</sup>Principal Investigator
 
 
 ## Motivation: Learning Affordances Through Play
@@ -25,7 +28,7 @@ This project takes inspiration from this natural process. Our goal is to enable 
 - Discover affordances — the actionable possibilities an object provides — without needing massive labeled datasets.
 
 This biological analogy underpins our concept of Affordance Imagination: giving robots the ability to reason about function through simulation and exploration, the same way evolution equipped primates and humans with the ability to learn tools by trying them out.
-<figure>
+<figure style="text-align: center;">
   <img src="resources/monkey-tool.png" alt="Motivation" width="500">
 </figure>
 
@@ -37,6 +40,7 @@ Our central concept is affordance imagination — enabling robots to mentally si
 The works presented here illustrate how affordance imagination bridges the gap between theory and practice: from seating a teddy bear on a previously unseen chair, to predicting hanging poses of tools, to capping containers, to leveraging LLMs for task decomposition. Together, these efforts chart a path toward safe, generalizable, and intelligent robot interaction in household and healthcare environments.
 
 ## Affordance Imagination
+
 - [Paper](https://arxiv.org/abs/2502.15525){:target="_blank"}
 - Code: 
   - C++ library & ROS package: upcoming..

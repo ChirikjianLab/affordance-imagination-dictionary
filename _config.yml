@@ -1,0 +1,10 @@
+title: Enhanced Probabilistic Collision Detection
+description: Project page for "Enhanced Probabilistic Collision Detection for Motion Planning Under Sensing Uncertainty".
+theme: jekyll-theme-cayman
+baseurl: /enhanced-pcd
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"

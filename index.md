@@ -41,14 +41,27 @@ The works presented here illustrate how affordance imagination bridges the gap b
 
 ## Affordance Imagination
 
-- [Paper](https://arxiv.org/abs/2502.15525){:target="_blank"}
-- Code: 
-  - C++ library & ROS package: upcoming..
-  - [MATLAB implementation](https://github.com/lily983/pcd-matlab){:target="_blank"}: MATLAB version for algorithms. It also includes visualizaions for figures in the paper and benchmark results from C++ implementations.
+### Prepare the Chair for the Bear! Robot Imagination of Sitting Affordance to Reorient Previously Unseen Chairs (RA-L 2023)
 
-## Introductory Figure
-<figure>
-  <img src="resources/intro.png" alt="Intro figure" width="500">
-  <figcaption><em>Figure 1: Comparison of motion planning results with and without taking into account sensing uncertainty. (a-b) Pose estimates of each object using an existing method in Isaac Sim. (c) Superquadric representation of each robot link at its ground truth pose (yellow) and of each object at its estimated mean pose (blue), where the robot configuration is justified as valid by a deterministic collision checker. (d) Snapshot of a collision between the robot and an object due to unmodeled pose uncertainty. (e) The enlarged surface that encapsulates many rotated copies of the objects due to orientation errors in pose estimates (green), and the robot configuration that is justified as valid by our probabilistic collision checker. (f) Corresponding snapshot of the robot showing no collision with objects.</em></figcaption>
+Robots reconstruct previously unseen chairs, simulate their sitting affordance, and reorient them so a humanoid agent (teddy bear proxy) can be seated. Demonstrates object classification and functional pose prediction via physics-based imagination
+
+<figure style="text-align: center;">
+  <img src="resources/prepare-chair.png" alt="prepare-chair" width="300">
 </figure>
+
+<div style="display: flex; align-items: center;">
+  <figure style="margin: 0; margin-right: 20px;">
+    <img src="resources/prepare-chair.png" alt="prepare-chair" width="300">
+  </figure>
+  <p style="max-width: 500px;">
+    Robots reconstruct previously unseen chairs, simulate their sitting affordance, 
+    and reorient them so a humanoid agent (teddy bear proxy) can be seated. 
+    Demonstrates object classification and functional pose prediction via 
+    physics-based imagination.
+  </p>
+</div>
+
+- [Paper](https://arxiv.org/abs/2502.15525){:target="_blank"}
+- [Code](https://github.com/ChirikjianLab){:target="_blank"}
+
 

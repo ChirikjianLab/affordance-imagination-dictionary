@@ -1,7 +1,7 @@
-title: Enhanced Probabilistic Collision Detection
-description: Project page for "Enhanced Probabilistic Collision Detection for Motion Planning Under Sensing Uncertainty".
+title: Affordance Imagnation Dictionary
+description: Project page for physical simulation-based affordance imagination of objects
 theme: jekyll-theme-cayman
-baseurl: /enhanced-pcd
+baseurl: /affordance-imagination-dictionary
 defaults:
   -
     scope:

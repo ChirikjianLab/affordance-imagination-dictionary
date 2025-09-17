@@ -1,15 +1,24 @@
-[Xiaoli Wang<sup>1</sup>](https://github.com/lily983){:target="_blank"}, [Sipu Ruan<sup>1</sup>](https://ruansp.github.io/){:target="_blank"}, [Xin Meng<sup>1</sup>](https://github.com/XinnMeng){:target="_blank"}, [Gregory Chirikjian<sup>1*</sup>](https://cde.nus.edu.sg/me/staff/chirikjian-gregory-s/){:target="_blank"}
+[Xiaoli Wang<sup>1</sup>](https://github.com/lily983){:target="_blank"}, [Sipu Ruan<sup>1</sup>](https://ruansp.github.io/){:target="_blank"}, [Xin Meng<sup>1</sup>](https://github.com/XinnMeng){:target="_blank"}, 
+[Hongtao Wu<sup>1</sup>](https://github.com/ChirikjianLab){:target="_blank"},
+[Wanze Li<sup>1</sup>](https://github.com/ChirikjianLab){:target="_blank"},
+[Zhanhong Sun<sup>1</sup>](https://github.com/ChirikjianLab){:target="_blank"},
+[Yuwei Wu<sup>1</sup>](https://github.com/ChirikjianLab){:target="_blank"},
+[Ceng Zhang<sup>1</sup>](https://github.com/ChirikjianLab){:target="_blank"},
+[Wan Su<sup>1</sup>](https://github.com/ChirikjianLab){:target="_blank"}, [Gregory Chirikjian<sup>1*</sup>](https://cde.nus.edu.sg/me/staff/chirikjian-gregory-s/){:target="_blank"}
 
 <sup>1</sup>Department of Mechanical Engineering, National University of Singapore, Singapore
 
 <sup>*</sup>Department of Mechanical Engineering, University of Delaware, USA
 
-Published in __IEEE Robotics and Automation Letters (RA-L)__, August 2025
 
-## Abstract
-Probabilistic collision detection (PCD) is essential in motion planning for robots operating in unstructured environments, where considering sensing uncertainty helps prevent damage. Existing PCD methods mainly use simplified geometric models and address only position estimation errors. This paper presents an enhanced PCD method with two key advancements: (a) using superquadrics for more accurate shape approximation and (b) accounting for both position and orientation estimation errors to improve robustness under sensing uncertainty. Our method first computes an enlarged surface for each object that encapsulates its observed rotated copies, thereby addressing the orientation estimation errors. Then, the collision probability is formulated as a chance-constraint problem that is solved with a tight upper bound. Both steps leverage the recently developed closed-form normal parameterized surface expression of superquadrics. Results show that our PCD method is twice as close to the Monte-Carlo sampled baseline as the best existing PCD method and reduces path length by 30% and planning time by 37%, respectively. A Real2Sim2Real pipeline further validates the importance of considering orientation estimation errors, showing that the collision probability of executing the planned path is only 2%, compared to 9% and 29% when considering only position estimation errors or no errors at all.
+## Introduction
+This website presents the research outcomes of our group to demonstrate progress toward our funded project goal: using physical simulation to detect and reason about the affordances of objects.
 
-## Links
+Our central concept is affordance imagination — enabling robots to mentally simulate possible interactions with previously unseen objects. By integrating physics-based reasoning, geometric analysis, and learning methods (from demonstrations and large language models), our robots can classify novel objects, predict functional poses, and execute manipulation strategies without relying on massive amounts of training data.
+
+The works presented here illustrate how affordance imagination bridges the gap between theory and practice: from seating a teddy bear on a previously unseen chair, to predicting hanging poses of tools, to capping containers, to leveraging LLMs for task decomposition. Together, these efforts chart a path toward safe, generalizable, and intelligent robot interaction in household and healthcare environments.
+
+## Affordance Imagination
 - [Paper](https://arxiv.org/abs/2502.15525){:target="_blank"}
 - Code: 
   - C++ library & ROS package: upcoming..

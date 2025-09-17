@@ -11,7 +11,7 @@
 <sup>*</sup>Department of Mechanical Engineering, University of Delaware, USA
 
 
-## Introduction
+## Motivation
 This website presents the research outcomes of our group to demonstrate progress toward our funded project goal: using physical simulation to detect and reason about the affordances of objects.
 
 Our central concept is affordance imagination — enabling robots to mentally simulate possible interactions with previously unseen objects. By integrating physics-based reasoning, geometric analysis, and learning methods (from demonstrations and large language models), our robots can classify novel objects, predict functional poses, and execute manipulation strategies without relying on massive amounts of training data.

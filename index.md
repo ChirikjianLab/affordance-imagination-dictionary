@@ -3,7 +3,7 @@
 [Wanze Li<sup>1</sup>](https://github.com/ChirikjianLab){:target="_blank"},
 [Zhanhong Sun<sup>1</sup>](https://github.com/ChirikjianLab){:target="_blank"},
 [Yuwei Wu<sup>1</sup>](https://github.com/ChirikjianLab){:target="_blank"},
-[Ceng Zhang<sup>1</sup>](https://github.com/ChirikjianLab){:target="_blank"},
+[Ceng Zhang<sup>1</sup>]{:target="_blank"},
 [Wan Su<sup>1</sup>](https://github.com/ChirikjianLab){:target="_blank"}, 
 [Chen Dong<sup>2</sup>](https://github.com/ChirikjianLab){:target="_blank"}, 
 [Cecilia Laschi<sup>12*</sup>](https://scholar.google.com/citations?user=1vR7lMUAAAAJ&hl=en){:target="_blank"}

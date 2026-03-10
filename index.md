@@ -41,7 +41,7 @@ The works presented here illustrate how affordance imagination bridges the gap b
 
 ## Affordance Dictionary
 
-This section is designed as a compact catalog for common household objects that can support affordance reasoning, simulation, and demonstration. Each entry records the object category, an interactive 3D asset preview, the main affordance, the dominant interaction pattern, and the corresponding demonstration video.
+This section is designed as a compact catalog for common household objects that can support affordance reasoning, simulation, and demonstration. Each entry records the object category, the 3D asset link, the main affordance, the dominant interaction pattern, and the corresponding demonstration video.
 
 <style>
   .dictionary-note {
@@ -91,47 +91,10 @@ This section is designed as a compact catalog for common household objects that 
     font-size: 0.84rem;
   }
 
-  .model-cell {
-    min-width: 190px;
-  }
-
-  .obj-viewer {
-    position: relative;
-    width: 180px;
-    height: 180px;
-    margin-bottom: 0.45rem;
-    border: 1px solid #d7e7e4;
-    border-radius: 0.75rem;
-    overflow: hidden;
-    background:
-      radial-gradient(circle at top, #ffffff 0%, #f4fbfa 52%, #deeeeb 100%);
-  }
-
-  .obj-viewer canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
-    cursor: grab;
-  }
-
-  .obj-viewer canvas:active {
-    cursor: grabbing;
-  }
-
-  .viewer-status {
-    position: absolute;
-    inset: auto 0 0 0;
-    padding: 0.35rem 0.45rem;
-    background: rgba(15, 61, 57, 0.72);
-    color: #ffffff;
-    font-size: 0.72rem;
-    text-align: center;
-    letter-spacing: 0.01em;
-  }
-
-  .asset-path {
-    font-size: 0.8rem;
-    line-height: 1.45;
+  .model-link {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
   }
 
   .video-placeholder {
@@ -146,7 +109,7 @@ This section is designed as a compact catalog for common household objects that 
 </style>
 
 <div class="dictionary-note">
-  <strong>Current asset mapping.</strong> The repository already contains 25 object meshes under <code>assets/</code> in <code>.obj</code> format, so the table below renders each one as a draggable preview. Video files are not present yet, so the last column keeps a ready-to-fill placeholder path for each object.
+  <strong>Current asset mapping.</strong> The repository already contains 25 object meshes under <code>assets/</code> in <code>.obj</code> format. The table links each asset to a separate viewer page so the main page stays lightweight. Video files are not present yet, so the last column keeps a ready-to-fill placeholder path for each object.
 </div>
 
 <div class="dictionary-table-wrapper">
@@ -162,137 +125,36 @@ This section is designed as a compact catalog for common household objects that 
       </tr>
     </thead>
     <tbody>
-      <tr><td>01</td><td>Ashtray</td><td class="model-cell"><div class="obj-viewer" data-model="assets/ashtray.obj"></div><div class="asset-path"><code>assets/ashtray.obj</code></div></td><td>Collect ash and small discarded items</td><td><span class="interaction-tag">grasp-rim</span><span class="interaction-tag">place-on-surface</span><span class="interaction-tag">drop-into</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/ashtray.mp4</code></td></tr>
-      <tr><td>02</td><td>Basin</td><td class="model-cell"><div class="obj-viewer" data-model="assets/basin.obj"></div><div class="asset-path"><code>assets/basin.obj</code></div></td><td>Contain water or loose objects</td><td><span class="interaction-tag">grasp-rim</span><span class="interaction-tag">carry</span><span class="interaction-tag">fill/pour</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/basin.mp4</code></td></tr>
-      <tr><td>03</td><td>Basket</td><td class="model-cell"><div class="obj-viewer" data-model="assets/basket.obj"></div><div class="asset-path"><code>assets/basket.obj</code></div></td><td>Store and transport household items</td><td><span class="interaction-tag">grasp-handle</span><span class="interaction-tag">carry</span><span class="interaction-tag">load/unload</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/basket.mp4</code></td></tr>
-      <tr><td>04</td><td>Bathtub</td><td class="model-cell"><div class="obj-viewer" data-model="assets/bathtub.obj"></div><div class="asset-path"><code>assets/bathtub.obj</code></div></td><td>Contain a body for washing or soaking</td><td><span class="interaction-tag">approach</span><span class="interaction-tag">step-in</span><span class="interaction-tag">support-body</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/bathtub.mp4</code></td></tr>
-      <tr><td>05</td><td>Bed</td><td class="model-cell"><div class="obj-viewer" data-model="assets/bed.obj"></div><div class="asset-path"><code>assets/bed.obj</code></div></td><td>Support lying, resting, and sleeping</td><td><span class="interaction-tag">approach</span><span class="interaction-tag">sit/lie</span><span class="interaction-tag">reposition-bedding</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/bed.mp4</code></td></tr>
-      <tr><td>06</td><td>Bottle</td><td class="model-cell"><div class="obj-viewer" data-model="assets/bottle.obj"></div><div class="asset-path"><code>assets/bottle.obj</code></div></td><td>Store and pour liquid</td><td><span class="interaction-tag">wrap-grasp</span><span class="interaction-tag">tilt-pour</span><span class="interaction-tag">set-down</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/bottle.mp4</code></td></tr>
-      <tr><td>07</td><td>Bowl</td><td class="model-cell"><div class="obj-viewer" data-model="assets/bowl.obj"></div><div class="asset-path"><code>assets/bowl.obj</code></div></td><td>Contain food or small items</td><td><span class="interaction-tag">grasp-rim</span><span class="interaction-tag">carry</span><span class="interaction-tag">place</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/bowl.mp4</code></td></tr>
-      <tr><td>08</td><td>Box</td><td class="model-cell"><div class="obj-viewer" data-model="assets/box.obj"></div><div class="asset-path"><code>assets/box.obj</code></div></td><td>Enclose, store, and organize contents</td><td><span class="interaction-tag">grasp-side</span><span class="interaction-tag">open/close</span><span class="interaction-tag">pack</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/box.mp4</code></td></tr>
-      <tr><td>09</td><td>Chair</td><td class="model-cell"><div class="obj-viewer" data-model="assets/chair.obj"></div><div class="asset-path"><code>assets/chair.obj</code></div></td><td>Support sitting posture</td><td><span class="interaction-tag">grasp-backrest</span><span class="interaction-tag">pull/push</span><span class="interaction-tag">sit-support</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/chair.mp4</code></td></tr>
-      <tr><td>10</td><td>Cubby</td><td class="model-cell"><div class="obj-viewer" data-model="assets/cubby.obj"></div><div class="asset-path"><code>assets/cubby.obj</code></div></td><td>Compartmentalize and store objects</td><td><span class="interaction-tag">insert</span><span class="interaction-tag">retrieve</span><span class="interaction-tag">organize</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/cubby.mp4</code></td></tr>
-      <tr><td>11</td><td>Cup</td><td class="model-cell"><div class="obj-viewer" data-model="assets/cup.obj"></div><div class="asset-path"><code>assets/cup.obj</code></div></td><td>Contain and transport a drink</td><td><span class="interaction-tag">grasp-side</span><span class="interaction-tag">lift</span><span class="interaction-tag">drink/pour</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/cup.mp4</code></td></tr>
-      <tr><td>12</td><td>Cupboard</td><td class="model-cell"><div class="obj-viewer" data-model="assets/cupboard.obj"></div><div class="asset-path"><code>assets/cupboard.obj</code></div></td><td>Store protected household items</td><td><span class="interaction-tag">open-door</span><span class="interaction-tag">shelve</span><span class="interaction-tag">close-door</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/cupboard.mp4</code></td></tr>
-      <tr><td>13</td><td>Display Stand</td><td class="model-cell"><div class="obj-viewer" data-model="assets/display.obj"></div><div class="asset-path"><code>assets/display.obj</code></div></td><td>Present and support an object visibly</td><td><span class="interaction-tag">place-object</span><span class="interaction-tag">stabilize</span><span class="interaction-tag">reposition</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/display.mp4</code></td></tr>
-      <tr><td>14</td><td>Ladle</td><td class="model-cell"><div class="obj-viewer" data-model="assets/ladle.obj"></div><div class="asset-path"><code>assets/ladle.obj</code></div></td><td>Scoop and transfer liquid</td><td><span class="interaction-tag">grasp-handle</span><span class="interaction-tag">dip</span><span class="interaction-tag">pour-out</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/ladle.mp4</code></td></tr>
-      <tr><td>15</td><td>Plate</td><td class="model-cell"><div class="obj-viewer" data-model="assets/plate.obj"></div><div class="asset-path"><code>assets/plate.obj</code></div></td><td>Support and present food</td><td><span class="interaction-tag">pinch-edge</span><span class="interaction-tag">carry-flat</span><span class="interaction-tag">set-down</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/plate.mp4</code></td></tr>
-      <tr><td>16</td><td>Pot</td><td class="model-cell"><div class="obj-viewer" data-model="assets/pot.obj"></div><div class="asset-path"><code>assets/pot.obj</code></div></td><td>Contain and heat ingredients</td><td><span class="interaction-tag">grasp-handle</span><span class="interaction-tag">lift</span><span class="interaction-tag">pour</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/pot.mp4</code></td></tr>
-      <tr><td>17</td><td>Riser</td><td class="model-cell"><div class="obj-viewer" data-model="assets/riser.obj"></div><div class="asset-path"><code>assets/riser.obj</code></div></td><td>Raise an object to a higher level</td><td><span class="interaction-tag">place-under</span><span class="interaction-tag">elevate</span><span class="interaction-tag">stabilize</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/riser.mp4</code></td></tr>
-      <tr><td>18</td><td>Shelf</td><td class="model-cell"><div class="obj-viewer" data-model="assets/shelf.obj"></div><div class="asset-path"><code>assets/shelf.obj</code></div></td><td>Support stored objects vertically</td><td><span class="interaction-tag">place-object</span><span class="interaction-tag">stack</span><span class="interaction-tag">retrieve</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/shelf.mp4</code></td></tr>
-      <tr><td>19</td><td>Shoe Rack</td><td class="model-cell"><div class="obj-viewer" data-model="assets/shoe_rack.obj"></div><div class="asset-path"><code>assets/shoe_rack.obj</code></div></td><td>Organize and store footwear</td><td><span class="interaction-tag">place-pair</span><span class="interaction-tag">align</span><span class="interaction-tag">retrieve</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/shoe_rack.mp4</code></td></tr>
-      <tr><td>20</td><td>Stool</td><td class="model-cell"><div class="obj-viewer" data-model="assets/stool.obj"></div><div class="asset-path"><code>assets/stool.obj</code></div></td><td>Support sitting or standing reach</td><td><span class="interaction-tag">top-grasp</span><span class="interaction-tag">reposition</span><span class="interaction-tag">step/sit</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/stool.mp4</code></td></tr>
-      <tr><td>21</td><td>Table</td><td class="model-cell"><div class="obj-viewer" data-model="assets/table.obj"></div><div class="asset-path"><code>assets/table.obj</code></div></td><td>Support placement and workspace use</td><td><span class="interaction-tag">place-object</span><span class="interaction-tag">lean-support</span><span class="interaction-tag">push</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/table.mp4</code></td></tr>
-      <tr><td>22</td><td>Trash Bin</td><td class="model-cell"><div class="obj-viewer" data-model="assets/trashbin.obj"></div><div class="asset-path"><code>assets/trashbin.obj</code></div></td><td>Receive and contain waste</td><td><span class="interaction-tag">drop-into</span><span class="interaction-tag">grasp-rim</span><span class="interaction-tag">relocate</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/trashbin.mp4</code></td></tr>
-      <tr><td>23</td><td>TV Stand</td><td class="model-cell"><div class="obj-viewer" data-model="assets/tv_stand.obj"></div><div class="asset-path"><code>assets/tv_stand.obj</code></div></td><td>Support media devices at viewing height</td><td><span class="interaction-tag">place-object</span><span class="interaction-tag">organize-cables</span><span class="interaction-tag">reposition</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/tv_stand.mp4</code></td></tr>
-      <tr><td>24</td><td>Vase</td><td class="model-cell"><div class="obj-viewer" data-model="assets/vase.obj"></div><div class="asset-path"><code>assets/vase.obj</code></div></td><td>Hold flowers or decorative stems</td><td><span class="interaction-tag">grasp-body</span><span class="interaction-tag">insert-stems</span><span class="interaction-tag">place-display</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/vase.mp4</code></td></tr>
-      <tr><td>25</td><td>Wine Glass</td><td class="model-cell"><div class="obj-viewer" data-model="assets/wine_glass.obj"></div><div class="asset-path"><code>assets/wine_glass.obj</code></div></td><td>Contain and present a beverage delicately</td><td><span class="interaction-tag">pinch-stem</span><span class="interaction-tag">lift</span><span class="interaction-tag">sip/place</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/wine_glass.mp4</code></td></tr>
+      <tr><td>01</td><td>Ashtray</td><td><a class="model-link" href="viewer.html?model=assets/ashtray.obj&name=Ashtray" target="_blank"><code>assets/ashtray.obj</code></a><br><small>Click to view 3D model</small></td><td>Collect ash and small discarded items</td><td><span class="interaction-tag">grasp-rim</span><span class="interaction-tag">place-on-surface</span><span class="interaction-tag">drop-into</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/ashtray.mp4</code></td></tr>
+      <tr><td>02</td><td>Basin</td><td><a class="model-link" href="viewer.html?model=assets/basin.obj&name=Basin" target="_blank"><code>assets/basin.obj</code></a><br><small>Click to view 3D model</small></td><td>Contain water or loose objects</td><td><span class="interaction-tag">grasp-rim</span><span class="interaction-tag">carry</span><span class="interaction-tag">fill/pour</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/basin.mp4</code></td></tr>
+      <tr><td>03</td><td>Basket</td><td><a class="model-link" href="viewer.html?model=assets/basket.obj&name=Basket" target="_blank"><code>assets/basket.obj</code></a><br><small>Click to view 3D model</small></td><td>Store and transport household items</td><td><span class="interaction-tag">grasp-handle</span><span class="interaction-tag">carry</span><span class="interaction-tag">load/unload</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/basket.mp4</code></td></tr>
+      <tr><td>04</td><td>Bathtub</td><td><a class="model-link" href="viewer.html?model=assets/bathtub.obj&name=Bathtub" target="_blank"><code>assets/bathtub.obj</code></a><br><small>Click to view 3D model</small></td><td>Contain a body for washing or soaking</td><td><span class="interaction-tag">approach</span><span class="interaction-tag">step-in</span><span class="interaction-tag">support-body</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/bathtub.mp4</code></td></tr>
+      <tr><td>05</td><td>Bed</td><td><a class="model-link" href="viewer.html?model=assets/bed.obj&name=Bed" target="_blank"><code>assets/bed.obj</code></a><br><small>Click to view 3D model</small></td><td>Support lying, resting, and sleeping</td><td><span class="interaction-tag">approach</span><span class="interaction-tag">sit/lie</span><span class="interaction-tag">reposition-bedding</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/bed.mp4</code></td></tr>
+      <tr><td>06</td><td>Bottle</td><td><a class="model-link" href="viewer.html?model=assets/bottle.obj&name=Bottle" target="_blank"><code>assets/bottle.obj</code></a><br><small>Click to view 3D model</small></td><td>Store and pour liquid</td><td><span class="interaction-tag">wrap-grasp</span><span class="interaction-tag">tilt-pour</span><span class="interaction-tag">set-down</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/bottle.mp4</code></td></tr>
+      <tr><td>07</td><td>Bowl</td><td><a class="model-link" href="viewer.html?model=assets/bowl.obj&name=Bowl" target="_blank"><code>assets/bowl.obj</code></a><br><small>Click to view 3D model</small></td><td>Contain food or small items</td><td><span class="interaction-tag">grasp-rim</span><span class="interaction-tag">carry</span><span class="interaction-tag">place</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/bowl.mp4</code></td></tr>
+      <tr><td>08</td><td>Box</td><td><a class="model-link" href="viewer.html?model=assets/box.obj&name=Box" target="_blank"><code>assets/box.obj</code></a><br><small>Click to view 3D model</small></td><td>Enclose, store, and organize contents</td><td><span class="interaction-tag">grasp-side</span><span class="interaction-tag">open/close</span><span class="interaction-tag">pack</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/box.mp4</code></td></tr>
+      <tr><td>09</td><td>Chair</td><td><a class="model-link" href="viewer.html?model=assets/chair.obj&name=Chair" target="_blank"><code>assets/chair.obj</code></a><br><small>Click to view 3D model</small></td><td>Support sitting posture</td><td><span class="interaction-tag">grasp-backrest</span><span class="interaction-tag">pull/push</span><span class="interaction-tag">sit-support</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/chair.mp4</code></td></tr>
+      <tr><td>10</td><td>Cubby</td><td><a class="model-link" href="viewer.html?model=assets/cubby.obj&name=Cubby" target="_blank"><code>assets/cubby.obj</code></a><br><small>Click to view 3D model</small></td><td>Compartmentalize and store objects</td><td><span class="interaction-tag">insert</span><span class="interaction-tag">retrieve</span><span class="interaction-tag">organize</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/cubby.mp4</code></td></tr>
+      <tr><td>11</td><td>Cup</td><td><a class="model-link" href="viewer.html?model=assets/cup.obj&name=Cup" target="_blank"><code>assets/cup.obj</code></a><br><small>Click to view 3D model</small></td><td>Contain and transport a drink</td><td><span class="interaction-tag">grasp-side</span><span class="interaction-tag">lift</span><span class="interaction-tag">drink/pour</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/cup.mp4</code></td></tr>
+      <tr><td>12</td><td>Cupboard</td><td><a class="model-link" href="viewer.html?model=assets/cupboard.obj&name=Cupboard" target="_blank"><code>assets/cupboard.obj</code></a><br><small>Click to view 3D model</small></td><td>Store protected household items</td><td><span class="interaction-tag">open-door</span><span class="interaction-tag">shelve</span><span class="interaction-tag">close-door</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/cupboard.mp4</code></td></tr>
+      <tr><td>13</td><td>Display Stand</td><td><a class="model-link" href="viewer.html?model=assets/display.obj&name=Display%20Stand" target="_blank"><code>assets/display.obj</code></a><br><small>Click to view 3D model</small></td><td>Present and support an object visibly</td><td><span class="interaction-tag">place-object</span><span class="interaction-tag">stabilize</span><span class="interaction-tag">reposition</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/display.mp4</code></td></tr>
+      <tr><td>14</td><td>Ladle</td><td><a class="model-link" href="viewer.html?model=assets/ladle.obj&name=Ladle" target="_blank"><code>assets/ladle.obj</code></a><br><small>Click to view 3D model</small></td><td>Scoop and transfer liquid</td><td><span class="interaction-tag">grasp-handle</span><span class="interaction-tag">dip</span><span class="interaction-tag">pour-out</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/ladle.mp4</code></td></tr>
+      <tr><td>15</td><td>Plate</td><td><a class="model-link" href="viewer.html?model=assets/plate.obj&name=Plate" target="_blank"><code>assets/plate.obj</code></a><br><small>Click to view 3D model</small></td><td>Support and present food</td><td><span class="interaction-tag">pinch-edge</span><span class="interaction-tag">carry-flat</span><span class="interaction-tag">set-down</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/plate.mp4</code></td></tr>
+      <tr><td>16</td><td>Pot</td><td><a class="model-link" href="viewer.html?model=assets/pot.obj&name=Pot" target="_blank"><code>assets/pot.obj</code></a><br><small>Click to view 3D model</small></td><td>Contain and heat ingredients</td><td><span class="interaction-tag">grasp-handle</span><span class="interaction-tag">lift</span><span class="interaction-tag">pour</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/pot.mp4</code></td></tr>
+      <tr><td>17</td><td>Riser</td><td><a class="model-link" href="viewer.html?model=assets/riser.obj&name=Riser" target="_blank"><code>assets/riser.obj</code></a><br><small>Click to view 3D model</small></td><td>Raise an object to a higher level</td><td><span class="interaction-tag">place-under</span><span class="interaction-tag">elevate</span><span class="interaction-tag">stabilize</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/riser.mp4</code></td></tr>
+      <tr><td>18</td><td>Shelf</td><td><a class="model-link" href="viewer.html?model=assets/shelf.obj&name=Shelf" target="_blank"><code>assets/shelf.obj</code></a><br><small>Click to view 3D model</small></td><td>Support stored objects vertically</td><td><span class="interaction-tag">place-object</span><span class="interaction-tag">stack</span><span class="interaction-tag">retrieve</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/shelf.mp4</code></td></tr>
+      <tr><td>19</td><td>Shoe Rack</td><td><a class="model-link" href="viewer.html?model=assets/shoe_rack.obj&name=Shoe%20Rack" target="_blank"><code>assets/shoe_rack.obj</code></a><br><small>Click to view 3D model</small></td><td>Organize and store footwear</td><td><span class="interaction-tag">place-pair</span><span class="interaction-tag">align</span><span class="interaction-tag">retrieve</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/shoe_rack.mp4</code></td></tr>
+      <tr><td>20</td><td>Stool</td><td><a class="model-link" href="viewer.html?model=assets/stool.obj&name=Stool" target="_blank"><code>assets/stool.obj</code></a><br><small>Click to view 3D model</small></td><td>Support sitting or standing reach</td><td><span class="interaction-tag">top-grasp</span><span class="interaction-tag">reposition</span><span class="interaction-tag">step/sit</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/stool.mp4</code></td></tr>
+      <tr><td>21</td><td>Table</td><td><a class="model-link" href="viewer.html?model=assets/table.obj&name=Table" target="_blank"><code>assets/table.obj</code></a><br><small>Click to view 3D model</small></td><td>Support placement and workspace use</td><td><span class="interaction-tag">place-object</span><span class="interaction-tag">lean-support</span><span class="interaction-tag">push</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/table.mp4</code></td></tr>
+      <tr><td>22</td><td>Trash Bin</td><td><a class="model-link" href="viewer.html?model=assets/trashbin.obj&name=Trash%20Bin" target="_blank"><code>assets/trashbin.obj</code></a><br><small>Click to view 3D model</small></td><td>Receive and contain waste</td><td><span class="interaction-tag">drop-into</span><span class="interaction-tag">grasp-rim</span><span class="interaction-tag">relocate</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/trashbin.mp4</code></td></tr>
+      <tr><td>23</td><td>TV Stand</td><td><a class="model-link" href="viewer.html?model=assets/tv_stand.obj&name=TV%20Stand" target="_blank"><code>assets/tv_stand.obj</code></a><br><small>Click to view 3D model</small></td><td>Support media devices at viewing height</td><td><span class="interaction-tag">place-object</span><span class="interaction-tag">organize-cables</span><span class="interaction-tag">reposition</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/tv_stand.mp4</code></td></tr>
+      <tr><td>24</td><td>Vase</td><td><a class="model-link" href="viewer.html?model=assets/vase.obj&name=Vase" target="_blank"><code>assets/vase.obj</code></a><br><small>Click to view 3D model</small></td><td>Hold flowers or decorative stems</td><td><span class="interaction-tag">grasp-body</span><span class="interaction-tag">insert-stems</span><span class="interaction-tag">place-display</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/vase.mp4</code></td></tr>
+      <tr><td>25</td><td>Wine Glass</td><td><a class="model-link" href="viewer.html?model=assets/wine_glass.obj&name=Wine%20Glass" target="_blank"><code>assets/wine_glass.obj</code></a><br><small>Click to view 3D model</small></td><td>Contain and present a beverage delicately</td><td><span class="interaction-tag">pinch-stem</span><span class="interaction-tag">lift</span><span class="interaction-tag">sip/place</span></td><td><span class="video-placeholder">Video needed</span><br><code>assets/videos/wine_glass.mp4</code></td></tr>
     </tbody>
   </table>
 </div>
 
-<script type="importmap">
-{
-  "imports": {
-    "three": "https://esm.sh/three@0.160.0",
-    "three/examples/jsm/controls/OrbitControls": "https://esm.sh/three@0.160.0/examples/jsm/controls/OrbitControls",
-    "three/examples/jsm/loaders/OBJLoader": "https://esm.sh/three@0.160.0/examples/jsm/loaders/OBJLoader"
-  }
-}
-</script>
-
-<script type="module">
-  import * as THREE from "three";
-  import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-  import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
-
-  const viewers = document.querySelectorAll(".obj-viewer");
-  const loader = new OBJLoader();
-
-  viewers.forEach((element) => {
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    const controls = new OrbitControls(camera, renderer.domElement);
-    const hemiLight = new THREE.HemisphereLight(0xffffff, 0xb6d4d0, 1.5);
-    const dirLight = new THREE.DirectionalLight(0xffffff, 1.2);
-    const status = document.createElement("div");
-
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
-    renderer.setSize(element.clientWidth, element.clientHeight);
-    element.appendChild(renderer.domElement);
-
-    status.className = "viewer-status";
-    status.textContent = "Loading model...";
-    element.appendChild(status);
-
-    controls.enablePan = false;
-    controls.enableDamping = true;
-    controls.dampingFactor = 0.08;
-    controls.minDistance = 1.2;
-    controls.maxDistance = 8;
-
-    camera.position.set(0, 0.8, 3.2);
-    scene.add(hemiLight);
-
-    dirLight.position.set(3, 4, 5);
-    scene.add(dirLight);
-
-    const animate = () => {
-      controls.update();
-      renderer.render(scene, camera);
-      requestAnimationFrame(animate);
-    };
-
-    loader.load(
-      element.dataset.model,
-      (object) => {
-        const box = new THREE.Box3().setFromObject(object);
-        const size = box.getSize(new THREE.Vector3());
-        const center = box.getCenter(new THREE.Vector3());
-        const maxDim = Math.max(size.x, size.y, size.z) || 1;
-        const scale = 1.6 / maxDim;
-
-        object.position.sub(center);
-        object.scale.setScalar(scale);
-
-        object.traverse((child) => {
-          if (child.isMesh) {
-            child.material = new THREE.MeshStandardMaterial({
-              color: 0x8eb7b1,
-              metalness: 0.08,
-              roughness: 0.78
-            });
-            child.castShadow = false;
-            child.receiveShadow = false;
-          }
-        });
-
-        scene.add(object);
-        controls.target.set(0, 0, 0);
-        controls.update();
-        status.textContent = "Drag to rotate";
-      },
-      undefined,
-      () => {
-        status.textContent = "Preview unavailable";
-      }
-    );
-
-    const resizeObserver = new ResizeObserver(() => {
-      const width = element.clientWidth;
-      const height = element.clientHeight;
-      camera.aspect = width / height;
-      camera.updateProjectionMatrix();
-      renderer.setSize(width, height);
-    });
-
-    resizeObserver.observe(element);
-    animate();
-  });
-</script>
-
-This table now reflects the actual contents of your `assets` folder. When you add videos, replace each placeholder path with a local file, a linked thumbnail, or an embedded player.
+This table now reflects the actual contents of your `assets` folder. Click any model link to open a dedicated viewer page. When you add videos, replace each placeholder path with a local file, a linked thumbnail, or an embedded player.
 
 ## Related Works
 

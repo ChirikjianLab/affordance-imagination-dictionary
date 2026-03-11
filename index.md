@@ -42,7 +42,7 @@ This biological analogy underpins our concept of Affordance Imagination: giving 
 </div>
 
 ## Introduction
-This website presents the research outcomes of our group to demonstrate progress toward our funded project goal: using physical simulation to detect and reason about the affordances of objects.
+This website presents an affordance dictionary of common household objects and research outcomes of our group to demonstrate progress toward our funded project goal: using physical simulation to detect and reason about the affordances of objects.
 
 Our central concept is affordance imagination — enabling robots to mentally simulate possible interactions with previously unseen objects. By integrating physics-based reasoning, geometric analysis, and learning methods (from demonstrations and large language models), our robots can classify novel objects, predict functional poses, and execute manipulation strategies without relying on massive amounts of training data.
 
@@ -50,7 +50,7 @@ The works presented here illustrate how affordance imagination bridges the gap b
 
 ## Object Affordance Dictionary
 
-This section is designed as a compact catalog for common household objects that can support affordance reasoning, simulation, and demonstration. Each entry records the object category, the 3D asset link, the main affordance, the dominant interaction pattern, and the corresponding demonstration video.
+This section is designed as a compact catalog for common household objects that can support affordance reasoning, simulation, and demonstration. Each entry records the object category, the 3D asset link, the main affordance, reasoning analysis by LLM, the dominant interaction pattern, and the corresponding imagination video in simulation.
 
 <style>
   .dictionary-note {
@@ -257,7 +257,7 @@ This section is designed as a compact catalog for common household objects that 
 </style>
 
 <div class="dictionary-note">
-  <strong>Current asset mapping.</strong> The repository contains household object meshes under <code>assets/models/</code> in <code>.obj</code> and <code>.glb</code> format, affordance reasoning profiles under <code>assets/profiles/</code>, and demonstration videos under <code>assets/videos/</code>. Click a model path to open the 3D viewer or click <code>analysis.txt</code> to read the corresponding reasoning.
+  <strong>Current asset mapping.</strong> The repository contains household object meshes under <code>assets/models/</code> in <code>.obj</code> and <code>.glb</code> format, affordance reasoning profiles under <code>assets/profiles/</code>, and demonstration videos under <code>assets/videos/</code>. Click a model path to open the 3D viewer, <code>analysis.txt</code> to read the corresponding reasoning or the mp4 video to visualize the imagination process in PyBullet simulation. To achieve generalized affordance reasoning, we develop a framework integrating LLMs for novel object imagination and you can find our demo code in <a href="https://github.com/ChirikjianLab/ImaginationWithLLM">ImaginationWithLLM</a>.
 </div>
 
 <div class="dictionary-section">
@@ -646,7 +646,6 @@ This section is designed as a compact catalog for common household objects that 
   animate();
 </script>
 
-This table now reflects the actual contents of your `assets` folder. Click any model link to open a centered in-page viewer. When you add videos, replace each placeholder path with a local file, a linked thumbnail, or an embedded player.
 
 ## Related Works
 

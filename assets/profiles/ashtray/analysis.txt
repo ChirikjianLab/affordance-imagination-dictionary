@@ -1,0 +1,10 @@
+<Start of analysis>
+Class of object: Ashtray
+
+Requested Affordance: To receive and contain ash and small burning or burnt residues such as cigarette ends
+
+Verifiability of affordance: Yes
+
+If it is an ashtray, it should afford holding small particulate residues within a shallow concavity and provide local stability for small cylindrical objects resting on its rim. Then we can use a placement test with representative small cylindrical rods to test its affordance. If the rods can rest stably on the rim or within the cavity without rolling off and the structure can contain the residues, then it has the affordance of the requested class.
+
+<End of analysis>

@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Shoe rack
+
+Requested Affordance: Holding and organizing multiple pairs of shoes in a stable, elevated, and accessible arrangement
+
+If it is a shoe rack, it should afford orderly support by providing multiple horizontal tiers or compartments sized to fit footwear, allowing shoes to rest securely without slipping. Then we can use a placement and stability test by arranging pairs of shoes on each tier and observing whether they remain stably supported and separated under static load. If the shoes stay in place and the structure remains upright and balanced, then it has the affordance of the requested class.
+
+<End of analysis>

@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Wine glass
+
+Requested Affordance: Holding a small quantity of liquid for drinking while being supported by a stem and base
+
+If it is a wine glass, it should afford containment of liquid within a concave bowl area elevated by a slender stem attached to a stable circular base. Then we can use a fill-and-hold test by pouring liquid into the bowl portion and observing whether it remains contained and the object stays upright without tipping under static conditions. If the liquid stays enclosed and the wine glass remains balanced on its base, then it has the affordance of the requested class.
+
+<End of analysis>

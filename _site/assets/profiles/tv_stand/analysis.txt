@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: TV stand
+
+Requested Affordance: Supporting and elevating a television or similar device in a stable and level position
+
+If it is a TV stand, it should afford static support by providing a broad, flat upper surface or designated area capable of bearing the weight of a television while maintaining balance and stability. Then we can use a static load test by placing a mass equivalent to a standard television on the top surface and observing whether the object remains stable, level, and undeformed. If it holds the load securely without tipping or sagging, then it has the affordance of the requested class.
+
+<End of analysis>

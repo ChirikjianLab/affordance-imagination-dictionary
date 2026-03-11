@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="baby_doll">
+
+  <!-- Base Link -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.3 0.3 0.3"/>
+      </geometry>
+      <material name="skin">
+        <color rgba="0.96 0.80 0.69 1.0"/> <!-- Approximate skin color -->
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.3 0.3 0.3"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.0"/> <!-- Approximate mass of a baby doll -->
+      <inertia ixx="0.0075" ixy="0.0" ixz="0.0" iyy="0.0075" iyz="0.0" izz="0.0075"/>
+    </inertial>
+  </link>
+
+  <!-- Dummy joints and links for limbs/head can be added if necessary for the experiment -->
+
+</robot>

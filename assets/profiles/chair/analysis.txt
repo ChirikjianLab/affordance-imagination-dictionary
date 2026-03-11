@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Chair
+
+Requested Affordance: Supporting a human body in a seated posture at rest
+
+If it is a chair, it should afford stable support for a person sitting, with a flat elevated surface for the sitter and often a backrest to maintain posture. Then we can use a static load test by applying human-weight equivalent pressure on the seat area and checking for stability and maintenance of balance without tipping or excessive deformation. If it remains upright and supports the load in a seated configuration, then it has the affordance of the requested class.
+
+<End of analysis>

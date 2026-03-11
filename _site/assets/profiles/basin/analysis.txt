@@ -1,0 +1,10 @@
+<Start of analysis>
+Class of object: Basin
+
+Requested Affordance: To hold and contain liquids or small loose materials within its concave volume
+
+Verifiability of affordance: Yes
+
+If it is a basin, it should afford containing liquids without leakage and possess a concave, upward-facing cavity with continuous boundaries. Then we can use a liquid-pouring test to test its affordance. If the liquid remains confined within the cavity and does not escape through structural openings (when kept level), then it has the affordance of the requested class.
+
+<End of analysis>

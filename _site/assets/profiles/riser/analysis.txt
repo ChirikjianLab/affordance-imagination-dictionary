@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Riser
+
+Requested Affordance: Elevating or supporting another object at a raised height while maintaining stability
+
+If it is a riser, it should afford elevation by providing a flat, stable top surface positioned above a supporting base, allowing another object to rest securely at an increased height. Then we can use a static support test by placing a weighted object on the upper surface and checking whether the riser remains upright, level, and undeformed. If the elevated object stays stable without tipping or collapse, then it has the affordance of the requested class.
+
+<End of analysis>

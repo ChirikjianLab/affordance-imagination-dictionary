@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Vase
+
+Requested Affordance: Containing and supporting flowers or similar objects, often with the ability to hold water within a hollow cavity
+
+If it is a vase, it should afford containment by having a hollow interior and a relatively narrow opening at the top to support upright placement of stems while retaining liquid in the base. Then we can use a fill-and-hold test by adding water and inserting slender objects such as rods or stems to observe whether the water remains contained and the stems stay upright under static conditions. If both containment and upright support are achieved without leakage or tipping, then it has the affordance of the requested class.
+
+<End of analysis>

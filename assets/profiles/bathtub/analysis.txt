@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Bathtub
+
+Requested Affordance: To hold and contain a volume of water sufficient for a human occupant to be partially or fully immersed
+
+If it is a bathtub, it should afford containing a large volume of water without leakage and possess a concave, human-scale cavity with stable boundaries and a level floor. Then we can use a water-filling test to test its affordance. If the cavity retains the water and its dimensions are sufficient for human immersion while maintaining structural integrity, then it has the affordance of the requested class.
+
+<End of analysis>

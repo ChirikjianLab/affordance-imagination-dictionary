@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Cup
+
+Requested Affordance: Holding and containing small quantities of liquid for drinking
+
+If it is a cup, it should afford containment by having a concave interior with upright sides and an open top, typically sized for grasping and pouring motion. Then we can use a fluid containment test by filling it partially with water and observing whether the liquid remains enclosed without leaking or spilling under static upright conditions. If the water stays inside and the object remains stable on a flat surface, then it has the affordance of the requested class.
+
+<End of analysis>

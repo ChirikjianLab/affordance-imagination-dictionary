@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Plate
+
+Requested Affordance: Holding and supporting food or small objects on a flat surface for serving or eating
+
+If it is a plate, it should afford containment on a broad, relatively flat upper surface with possibly shallow curvature or a slight rim to prevent items from sliding off easily. Then we can use a placement stability test by setting small solid objects or food portions on its surface and observing whether they remain stably supported without rolling or spilling under static conditions. If the items stay on the surface and the object remains level and stable, then it has the affordance of the requested class.
+
+<End of analysis>

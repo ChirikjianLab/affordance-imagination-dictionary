@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Bottle
+
+Requested Affordance: Containing and storing liquid within an enclosed vessel
+
+If it is a bottle, it should afford enclosing and retaining fluid within a hollow interior, with an opening small enough to prevent spillage when upright and typically compatible with a sealing mechanism such as a cap. Then we can use a fill-and-retain test, introducing liquid into the cavity and monitoring for leakage or overflow when the object is kept upright and slightly inclined. If the liquid remains stably contained and controllably pourable through the neck or mouth, then it has the affordance of the requested class.
+
+<End of analysis>

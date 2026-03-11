@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Pot
+
+Requested Affordance: Containing and holding liquids or solid ingredients within deep concave walls for static support or heating
+
+If it is a pot, it should afford containment by having a deep, enclosed interior with upright or slightly flared sides and a stable base, usually accompanied by handles for manipulation. Then we can use a fill-and-hold test by adding water or granular material into the cavity and observing whether it remains enclosed without leakage or tipping under static upright conditions. If the material stays contained and the pot maintains stability, then it has the affordance of the requested class.
+
+<End of analysis>

@@ -1,0 +1,9 @@
+<Start of analysis>
+Class of object: Shelf
+
+Requested Affordance: Supporting and holding objects elevated above a surface in a stable, horizontal manner
+
+If it is a shelf, it should afford static support by presenting a flat, horizontal surface capable of bearing the weight of placed objects without significant deformation or tipping. Then we can use a load stability test by placing various objects along its surface and observing whether they remain stably supported and evenly balanced. If the objects stay in place and the surface remains level and secure under static conditions, then it has the affordance of the requested class.
+
+<End of analysis>
+

@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Ladle
+
+Requested Affordance: Scooping and holding liquid or semi-liquid materials for transfer
+
+If it is a ladle, it should afford containment of a small amount of fluid in a concave bowl component at one end while being supported by a long handle for reaching into deeper containers. Then we can use a scooping-and-hold test by submerging the concave end in liquid, lifting it, and observing whether the liquid remains temporarily held in the bowl under static upright conditions. If the liquid stays contained without significant spillage while stationary, then it has the affordance of the requested class.
+
+<End of analysis>

@@ -1,0 +1,10 @@
+<Start of analysis>
+Class of object: Basket
+
+Requested Affordance: To hold and contain irregularly shaped solid items within a bounded open container, typically allowing portability
+
+Verifiability of affordance: Yes
+
+If it is a basket, it should afford containing multiple solid items within an open-top volume enclosed by side walls, and often provide a means for grasping or lifting. Then we can use a containment and lifting test to test its affordance. If the items remain securely enclosed when placed inside and the object can be lifted without deformation or loss of contents, then it has the affordance of the requested class.
+
+<End of analysis>

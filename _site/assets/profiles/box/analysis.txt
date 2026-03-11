@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Box
+
+Requested Affordance: Containing or enclosing other objects within a defined volume
+
+If it is a box, it should afford containment by having an enclosed space with flat faces and boundaries, typically rectangular, that restrict motion of objects placed inside. Then we can use an enclosure test by placing smaller items within the object and observing whether its geometry prevents them from escaping through openings. If the items remain contained and the object maintains shape and stability during this static condition, then it has the affordance of the requested class.
+
+<End of analysis>

@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Cubby
+
+Requested Affordance: Providing compartmentalized storage spaces for organizing or holding items
+
+If it is a cubby, it should afford containment and separation of multiple small objects within a set of open-faced compartments or cavities, typically arranged in a grid or array. Then we can use a placement test by inserting individual objects of appropriate size into each compartment and observing whether they remain stably held without rolling or falling out under static conditions. If each compartment holds its contents securely and the structure remains stable, then it has the affordance of the requested class.
+
+<End of analysis>

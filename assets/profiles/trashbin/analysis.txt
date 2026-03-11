@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Trash bin
+
+Requested Affordance: Containing and holding discarded materials within an open or enclosed cavity
+
+If it is a trash bin, it should afford containment by having a hollow interior with upright sides and an open or partially covered top to allow insertion of waste materials while preventing spillage. Then we can use a containment test by placing small items or debris inside and observing whether they remain enclosed and the structure remains upright and stable. If the materials stay within the cavity and the object does not tip or leak under static conditions, then it has the affordance of the requested class.
+
+<End of analysis>

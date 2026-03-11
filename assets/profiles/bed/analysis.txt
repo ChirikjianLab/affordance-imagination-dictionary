@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Bed
+
+Requested Affordance: Supporting a human body for lying or sleeping at rest
+
+If it is a bed, it should afford stable support of a human body in a lying posture while maintaining sufficient surface area and height to allow comfort and ease of access. Then we can use a flat load distribution test, applying human-weight equivalent pressure across the upper horizontal surface, to test its affordance. If the surface remains stable, level, and does not deform excessively or tip over under this static load, then it has the affordance of the requested class.
+
+<End of analysis>

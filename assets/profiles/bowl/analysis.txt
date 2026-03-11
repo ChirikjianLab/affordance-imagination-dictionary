@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Bowl
+
+Requested Affordance: Containing loose solids or liquids within a concave interior
+
+If it is a bowl, it should afford containment of granules or fluids without spillage when placed on a stable surface. Then we can use a fill-and-hold test by pouring a measurable amount of water or small particles into the concave region to observe whether they remain enclosed due to the geometry of upward-curving sides. If the material stays contained and does not leak or overflow under normal static conditions, then it has the affordance of the requested class.
+
+<End of analysis>

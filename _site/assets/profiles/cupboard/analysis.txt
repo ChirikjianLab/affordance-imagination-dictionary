@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Cupboard
+
+Requested Affordance: Storing and enclosing items within internal compartments or shelves
+
+If it is a cupboard, it should afford containment and organization of objects by providing an internal volume subdivided by shelves and optionally covered by doors to restrict access or visibility. Then we can use an enclosure and storage test by placing various items within the internal space and observing whether they remain securely contained and supported by horizontal surfaces under static conditions. If the items stay enclosed and the structure remains upright and stable, then it has the affordance of the requested class.
+
+<End of analysis>

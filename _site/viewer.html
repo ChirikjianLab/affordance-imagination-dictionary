@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3D Model Viewer</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #edf5f3;
+        --panel: rgba(255, 255, 255, 0.9);
+        --line: #cfe1dc;
+        --text: #173a36;
+        --muted: #58736f;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Open Sans", Arial, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top, #ffffff 0%, #edf5f3 48%, #dceceb 100%);
+      }
+
+      .layout {
+        display: grid;
+        grid-template-columns: minmax(220px, 320px) 1fr;
+        min-height: 100vh;
+      }
+
+      .sidebar {
+        padding: 1.5rem;
+        border-right: 1px solid var(--line);
+        background: var(--panel);
+        backdrop-filter: blur(8px);
+      }
+
+      .sidebar h1 {
+        margin: 0 0 0.75rem 0;
+        font-size: 1.5rem;
+      }
+
+      .sidebar p {
+        margin: 0 0 1rem 0;
+        line-height: 1.55;
+        color: var(--muted);
+      }
+
+      .sidebar code {
+        word-break: break-all;
+      }
+
+      .actions a {
+        color: #0c5f52;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .viewer {
+        position: relative;
+        min-height: 70vh;
+      }
+
+      #canvas {
+        width: 100%;
+        height: 100vh;
+        display: block;
+      }
+
+      .status {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        padding: 0.55rem 0.8rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.92);
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 820px) {
+        .layout {
+          grid-template-columns: 1fr;
+        }
+
+        .sidebar {
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+
+        #canvas {
+          height: 68vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <h1 id="title">3D Model Viewer</h1>
+        <p>Drag to rotate. Scroll to zoom. Right-drag to pan.</p>
+        <p><strong>Model file</strong><br><code id="model-path">No model selected</code></p>
+        <p class="actions"><a href="index.html">Back to dictionary</a></p>
+      </aside>
+      <main class="viewer">
+        <div class="status" id="status">Loading viewer...</div>
+        <canvas id="canvas"></canvas>
+      </main>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://esm.sh/three@0.160.0",
+          "three/examples/jsm/controls/OrbitControls": "https://esm.sh/three@0.160.0/examples/jsm/controls/OrbitControls",
+          "three/examples/jsm/loaders/OBJLoader": "https://esm.sh/three@0.160.0/examples/jsm/loaders/OBJLoader"
+        }
+      }
+    </script>
+
+    <script type="module">
+      import * as THREE from "three";
+      import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+      import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
+
+      const params = new URLSearchParams(window.location.search);
+      const modelPath = params.get("model");
+      const modelName = params.get("name") || "3D Model";
+      const title = document.getElementById("title");
+      const modelPathLabel = document.getElementById("model-path");
+      const status = document.getElementById("status");
+      const canvas = document.getElementById("canvas");
+
+      title.textContent = modelName;
+      modelPathLabel.textContent = modelPath || "No model selected";
+
+      if (!modelPath) {
+        status.textContent = "No model path provided";
+        throw new Error("Missing model path");
+      }
+
+      const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+
+      const scene = new THREE.Scene();
+      scene.background = new THREE.Color(0xedf5f3);
+
+      const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 1000);
+      camera.position.set(0, 0.8, 3);
+
+      const controls = new OrbitControls(camera, canvas);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.08;
+
+      scene.add(new THREE.HemisphereLight(0xffffff, 0xc2ddd8, 1.5));
+      const dirLight = new THREE.DirectionalLight(0xffffff, 1.15);
+      dirLight.position.set(4, 5, 4);
+      scene.add(dirLight);
+
+      const ground = new THREE.Mesh(
+        new THREE.CircleGeometry(2.2, 48),
+        new THREE.MeshBasicMaterial({ color: 0xdbeae7 })
+      );
+      ground.rotation.x = -Math.PI / 2;
+      ground.position.y = -0.95;
+      scene.add(ground);
+
+      const loader = new OBJLoader();
+      loader.load(
+        modelPath,
+        (object) => {
+          const box = new THREE.Box3().setFromObject(object);
+          const size = box.getSize(new THREE.Vector3());
+          const center = box.getCenter(new THREE.Vector3());
+          const maxDim = Math.max(size.x, size.y, size.z) || 1;
+          const scale = 1.8 / maxDim;
+
+          object.position.sub(center);
+          object.scale.setScalar(scale);
+
+          object.traverse((child) => {
+            if (child.isMesh) {
+              child.material = new THREE.MeshStandardMaterial({
+                color: 0x7aa8a1,
+                roughness: 0.78,
+                metalness: 0.08
+              });
+            }
+          });
+
+          scene.add(object);
+          controls.target.set(0, 0, 0);
+          controls.update();
+          status.textContent = "Model loaded";
+        },
+        undefined,
+        () => {
+          status.textContent = "Failed to load model";
+        }
+      );
+
+      function resize() {
+        const width = canvas.clientWidth;
+        const height = canvas.clientHeight;
+        renderer.setSize(width, height, false);
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+      }
+
+      function animate() {
+        resize();
+        controls.update();
+        renderer.render(scene, camera);
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+    </script>
+  </body>
+</html>

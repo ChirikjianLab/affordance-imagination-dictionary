@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Table
+
+Requested Affordance: Supporting objects on a stable, elevated, and flat surface
+
+If it is a table, it should afford support by having a broad, level top surface elevated by legs or a central base, allowing other objects to rest on it without tipping. Then we can use a static load test by placing distributed weights or items on the surface and observing whether it remains level and stable without collapse or excessive tilt. If the surface stays flat and the table maintains balance under the load, then it has the affordance of the requested class.
+
+<End of analysis>

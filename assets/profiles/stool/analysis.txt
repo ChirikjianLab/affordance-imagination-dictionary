@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Stool
+
+Requested Affordance: Supporting a human body in a seated posture, typically without a backrest
+
+If it is a stool, it should afford stable seating by providing a flat, elevated surface at an appropriate height and sufficient structural balance through a base or legs. Then we can use a static load test by applying human-weight equivalent pressure to the top surface and checking for stability, balance, and resistance to tipping. If the surface supports the load without excessive deformation or loss of balance, then it has the affordance of the requested class.
+
+<End of analysis>

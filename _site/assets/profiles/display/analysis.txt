@@ -1,0 +1,8 @@
+<Start of analysis>
+Class of object: Display case
+
+Requested Affordance: Containing and presenting objects visibly while protecting them within an enclosed structure
+
+If it is a display case, it should afford visual display and secure containment by having transparent panels and an interior space capable of stably holding objects while preventing external contact. Then we can use a visibility and enclosure test by placing sample items inside and observing whether they remain visible from at least one transparent face and protected by surrounding barriers. If the objects are clearly viewable yet enclosed without openings sufficient for removal or contamination under static conditions, then it has the affordance of the requested class.
+
+<End of analysis>
